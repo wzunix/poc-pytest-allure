@@ -20,11 +20,10 @@ This is a POC project of integration of API test by Pytest with Allure report.
       allure-pytest==2.12.0 -> a plugin for 'Allure pytest integration' that generates a Allure report for test results.
               
 
-
 **1.2 Setup local project environment:**
 
     Step 1: Clone pic-core Repo from github
-            $ git clone https://github.pic.com/poc-pytest-allure.git
+            $ git clone https://github.com/wzunix/poc-pytest-allure.git
  
     Step 2: Create Anaconda Virtural environment
             $ conda create --name poc-pytest-allure python=3.8
@@ -37,10 +36,6 @@ This is a POC project of integration of API test by Pytest with Allure report.
     
     Note    If see setuptools related errors, try run:            
         (pic-core)$ python -m pip install -U pip setuptools     
-        
-
-## Writing tests for RESTful APIs in Python using requests
-
 
 ## Packages used in this poc-pytest-allure 
 ### 1. [requests](https://requests.readthedocs.io/en/latest/)  
@@ -65,7 +60,7 @@ Solution:
 	import urllib3
 	urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-### 2. [Pytest Report](https://docs.pytest.org/en/stable/)
+### 2. [Generate Pytest Report](https://docs.pytest.org/en/stable/)
 #### Test File Naming Convention ####
 -   By default pytest only identifies the **file names** starting with `test_` or ending with `_test` as the **test files**.
 #### Test Method Naming Convention ####
@@ -81,7 +76,7 @@ Solution:
 
     run the following command : `pytest Tests --junitxml="result.xml"`
 
-### 3. [Allure Report](https://docs.qameta.io/allure-report/#_installing_a_commandline)
+### 3. [Generate Allure Report](https://docs.qameta.io/allure-report/#_installing_a_commandline)
 #### 3.1 Install Allure ####
 - For MAC OS, run command - `brew install allure`
 #### 3.2 Check Allure Version ####
